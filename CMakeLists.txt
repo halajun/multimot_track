@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
-project(DynObjSLAM)
+project(MultMotTrack)
 
 IF(NOT CMAKE_BUILD_TYPE)
   SET(CMAKE_BUILD_TYPE Release)
@@ -94,16 +94,16 @@ ${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.dylib
 
 # Build examples
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/Stereo)
+#set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/Stereo)
 
-add_executable(stereo_kitti
-Examples/Stereo/stereo_kitti.cc)
-target_link_libraries(stereo_kitti ${PROJECT_NAME})
+#add_executable(stereo_kitti
+#Examples/Stereo/stereo_kitti.cc)
+#target_link_libraries(stereo_kitti ${PROJECT_NAME})
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/RGB-D)
 
-add_executable(rgbd_tum
+add_executable(rgbd_kitti
 Examples/RGB-D/rgbd_tum.cc)
-target_link_libraries(rgbd_tum ${PROJECT_NAME})
+target_link_libraries(rgbd_kitti ${PROJECT_NAME})
 
 

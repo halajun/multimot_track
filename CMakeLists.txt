@@ -102,8 +102,8 @@ ${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.dylib
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/RGB-D)
 
-add_executable(rgbd_kitti
+add_executable(rgbd_mmt
 Examples/RGB-D/rgbd_tum.cc)
-target_link_libraries(rgbd_kitti ${PROJECT_NAME})
+target_link_libraries(rgbd_mmt ${PROJECT_NAME})
 
 

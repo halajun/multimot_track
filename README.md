@@ -25,4 +25,4 @@ chmod +x build.sh
 ./build.sh
 ```
 
-This will create **libMultMotTrack.dylib**  at *lib* folder and the executables **rgbd_kitti** in *Examples* folder.
+This will create **libMultMotTrack.dylib**  at *lib* folder and the executables **rgbd_mmt** in *Examples* folder.

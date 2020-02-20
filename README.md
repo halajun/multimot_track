@@ -31,7 +31,7 @@ This will create **libMultMotTrack.dylib**  at *lib* folder and the executables 
 
 We have included a small set of sample data in *kitti_sample* folder.
 
-Execute the following command.
+Execute the following command to get the code run on the sample data.
 ```
 ./Examples/RGB-D/rgbd_mmt Vocabulary/ORBvoc.txt kitti_sample/kitti03.yaml kitti_sample
 ```

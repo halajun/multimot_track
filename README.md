@@ -8,7 +8,7 @@
 
 ## Prerequisites
 
- The prerequisites are the same as [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2).
+ The prerequisites are the same as ORB-SLAM2. If compiling problems met, please refer to [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2).
  We have tested the library in **MacOS Mojave 10.14.6**, but it should be easy to compile in other platforms.
 
 ## Compiling

@@ -26,3 +26,17 @@ chmod +x build.sh
 ```
 
 This will create **libMultMotTrack.dylib**  at *lib* folder and the executables **rgbd_mmt** in *Examples* folder.
+
+## Running Examples
+
+We have included a small set of sample data in *kitti_sample* folder.
+
+Execute the following command.
+
+./Examples/RGB-D/rgbd_mmt Vocabulary/ORBvoc.txt kitti_sample/kitti03.yaml kitti_sample
+```
+
+
+
+
+

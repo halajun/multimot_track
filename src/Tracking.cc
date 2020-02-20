@@ -809,19 +809,19 @@ cv::Mat Tracking::GrabImageRGBD(const cv::Mat &imRGB, cv::Mat &imD, const cv::Ma
     }
 
     // // ************** show trajectory results ***************
-    int sta_x = 150, sta_y = 20, radi = 5, thic = 3;  // (160/120/2/5) (300/120/5/10)
+    int sta_x = 300, sta_y = 120, radi = 2, thic = 2;  // (160/120/2/5) (300/120/5/10)
     float scale = 12; // 6
     cv::Mat CamPos = InvMatrix(mCurrentFrame.mTcw);
     int x = int(CamPos.at<float>(0,3)*scale) + sta_x;
     int y = int(CamPos.at<float>(2,3)*scale) + sta_y;
     // cv::circle(imTraj, cv::Point(x, y), radi, CV_RGB(255,0,0), thic);
     cv::rectangle(imTraj, cv::Point(x, y), cv::Point(x+10, y+10), cv::Scalar(0,0,255),thic);
-    // cv::rectangle(imTraj, cv::Point(10, 30), cv::Point(550, 60), CV_RGB(0,0,0), CV_FILLED);
-    // cv::putText(imTraj, "Camera Trajectory (RED SQUARE)", cv::Point(10, 30), cv::FONT_HERSHEY_COMPLEX, 0.6, CV_RGB(255, 255, 255), 1);
-    // char text[100];
-    // sprintf(text, "x = %02fm y = %02fm z = %02fm", CamPos.at<float>(0,3), CamPos.at<float>(1,3), CamPos.at<float>(2,3));
-    // cv::putText(imTraj, text, cv::Point(10, 50), cv::FONT_HERSHEY_COMPLEX, 0.6, cv::Scalar::all(255), 1);
-    // cv::putText(imTraj, "Object Trajectories (COLORED CIRCLES)", cv::Point(10, 70), cv::FONT_HERSHEY_COMPLEX, 0.6, CV_RGB(255, 255, 255), 1);
+    cv::rectangle(imTraj, cv::Point(10, 30), cv::Point(550, 60), CV_RGB(0,0,0), CV_FILLED);
+    cv::putText(imTraj, "Camera Trajectory (RED SQUARE)", cv::Point(10, 30), cv::FONT_HERSHEY_COMPLEX, 0.6, CV_RGB(255, 255, 255), 1);
+    char text[100];
+    sprintf(text, "x = %02fm y = %02fm z = %02fm", CamPos.at<float>(0,3), CamPos.at<float>(1,3), CamPos.at<float>(2,3));
+    cv::putText(imTraj, text, cv::Point(10, 50), cv::FONT_HERSHEY_COMPLEX, 0.6, cv::Scalar::all(255), 1);
+    cv::putText(imTraj, "Object Trajectories (COLORED CIRCLES)", cv::Point(10, 70), cv::FONT_HERSHEY_COMPLEX, 0.6, CV_RGB(255, 255, 255), 1);
 
     for (int i = 0; i < mCurrentFrame.vObjCentre3D.size(); ++i)
     {

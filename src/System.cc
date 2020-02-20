@@ -323,7 +323,7 @@ void System::Shutdown()
         pangolin::BindToContext("ORB-SLAM2: Map Viewer");
 }
 
-void System::SaveResultsICRA2020(const string &filename)
+void System::SaveResults(const string &filename)
 {
     cout << endl << "Saving Results into TXT File..." << endl;
 

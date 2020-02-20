@@ -108,11 +108,11 @@ int main(int argc, char **argv)
     std::vector<int> M_num(nImages,0);
 
     namedWindow( "Trajectory", cv::WINDOW_AUTOSIZE);
-    cv::Mat imTraj = cv::Mat::zeros(800, 300, CV_8UC3);
+    cv::Mat imTraj = cv::Mat::zeros(800, 600, CV_8UC3);
 
     // Main loop
-    cv::Mat imRGB, imD, mTcw_gt; // (799,0007) (802,0009) (293,0010) (836,0020) (338,0018) (1057,0019) (339,0013)
-    for(int ni=0; ni<143; ni++) // (153,0000)(446,0001)(232,0002)(143,0003)(313,0004)(296,0005)(144,0017)(269,0006)
+    cv::Mat imRGB, imD, mTcw_gt;
+    for(int ni=0; ni<nImages; ni++)
     {
         cout << endl;
         cout << "=======================================================" << endl;
@@ -205,7 +205,7 @@ int main(int argc, char **argv)
     // // Save camera trajectory
     // SLAM.SaveTrajectoryTUM("CameraTrajectory.txt");
     // SLAM.SaveKeyFrameTrajectoryTUM("KeyFrameTrajectory.txt");
-    // SLAM.SaveResultsICRA2020("0002/");
+    // SLAM.SaveResults("0002/");
 
     return 0;
 }

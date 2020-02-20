@@ -118,7 +118,7 @@ public:
     // SaveMap(const string &filename);
     // LoadMap(const string &filename);
 
-    void SaveResultsICRA2020(const string &filename);
+    void SaveResults(const string &filename);
 
     // Information from most recent processed frame
     // You can call this right after TrackMonocular (or stereo or RGBD)

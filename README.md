@@ -1,4 +1,4 @@
-# Robust Ego and Object 6-DoF Motion Estimation and Tracking<a href="https://arxiv.org/abs/2005.11052" target="_blank"><b>[ArXiv/PDF]</b></a>
+# Multi-Motion Tracking
 
 This code offers a multi-motion visual odometry system for dynamic environments. If you use it in an academic work, please cite:
 
@@ -10,13 +10,10 @@ This code offers a multi-motion visual odometry system for dynamic environments.
       organization={IEEE}
      }
 
+An ArXiv version of this paper is available [<b>HERE</b>](https://arxiv.org/abs/2005.11052).
 
-```diff
-! IMPORTANT NOTES:
-```
 
-This work has been extended to a Visual Object-aware Dynamic SLAM system (VDO-SLAM), acting as the front end with many improvements. Please refer to [<b>VDO-SLAM</b>](https://github.com/halajun/VDO_SLAM) for detailed information. The author recommends potential users try the full VDO-SLAM system with latest updates (this repository is not guaranteed to be updated as frequently as the VDO-SLAM repository).
-
+<mark><b>IMPORTANT NOTES</b></mark>:This work has been extended to a Visual Object-aware Dynamic SLAM system (VDO-SLAM), acting as the front end with many improvements. Please refer to [<b>VDO-SLAM</b>](https://github.com/halajun/VDO_SLAM) for detailed information. The author recommends potential users try the full VDO-SLAM system with latest updates (this repository is not guaranteed to be updated as frequently as the VDO-SLAM repository).
 
 
 ## License

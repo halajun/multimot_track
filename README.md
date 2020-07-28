@@ -12,7 +12,11 @@ This code offers a multi-motion visual odometry system for dynamic environments.
 
 ```diff
 - IMPORTANT NOTES:
-This work has been extended to a Visual Object-aware Dynamic SLAM system (VDO-SLAM), acting as the front end with many improvements. Please refer to [<b>VDO-SLAM</b>](https://github.com/halajun/VDO_SLAM) for detailed information. The author recommends potential users try the full VDO-SLAM system with latest updates (this repository is not guaranteed to be updated as frequently as the VDO-SLAM repository).
+- This work has been extended to a Visual Object-aware Dynamic SLAM system (VDO-SLAM), 
+- acting as the front end with many improvements. 
+- Please refer to [<b>VDO-SLAM</b>](https://github.com/halajun/VDO_SLAM) for detailed information. 
+- The author recommends potential users try the full VDO-SLAM system with latest updates 
+- (this repository is not guaranteed to be updated as frequently as the VDO-SLAM repository).
 ```
 
 

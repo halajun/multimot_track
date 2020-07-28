@@ -1,6 +1,24 @@
-# Multi-Motion Tracking #
+# Multi-Motion Tracking 
+**Authors:** [Jun Zhang](https://halajun.github.io/), [Mina Henein](https://minahenein.github.io/), [Robert Mahony](https://users.cecs.anu.edu.au/~Robert.Mahony/) and [Viorela Ila](http://viorelaila.net/) 
 
- This code offers a multi-motion visual odometry system for dynamic environment.
+This code offers a multi-motion visual odometry system for dynamic environments. If you use VDO-SLAM in an academic work, please cite:
+
+    @article{zhang2020iros,
+      title={{Robust Ego and Object 6-DoF Motion Estimation and Tracking}},
+      author={Zhang, Jun and Henein, Mina and Mahony, Robert and Ila, Viorela},
+      booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). To appear},
+      year={2020},
+      organization={IEEE}
+     }
+
+* <b>Robust Ego and Object 6-DoF Motion Estimation and Tracking</b> <br> 
+Jun Zhang, Mina Henein, Robert Mahony and Viorela Ila. 
+<i>The IEEE/RSJ International Conference on Intelligent Robots and Systems</i>. <b>IROS 2020</b>.
+<a href="https://arxiv.org/abs/2005.11052" target="_blank"><b>[ArXiv/PDF]</b></a>
+<a href="https://halajun.github.io/files/zhang20iros.txt" target="_blank"><b>[BibTex]</b></a>
+
+<span style="color:red"><b>IMPORTANT NOTES:</b></span> This work has been extended to a Visual Object-aware Dynamic SLAM system (VDO-SLAM), acting as the front end with many improvements. Please refer to [<b>VDO-SLAM</b>](https://github.com/halajun/VDO_SLAM" target="_blank) for detailed information. The author recommends potential users try the full VDO-SLAM system with latest updates (this repository is not guaranteed to be updated as frequently as the VDO-SLAM repository).
+
 
 ## License
 

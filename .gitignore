@@ -239,3 +239,6 @@ build/CMakeFiles/rgbd_mmt.dir/flags.make
 build/CMakeFiles/rgbd_mmt.dir/link.txt
 build/CMakeFiles/rgbd_mmt.dir/progress.make
 Examples/RGB-D/rgbd_mmt
+feat.png
+speed.png
+traj.png

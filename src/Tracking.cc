@@ -1282,26 +1282,29 @@ void Tracking::Track()
         //     cout << of_range_cam[j] << " ";
         // cout << endl;
 
-        // Get initial estimate using PnP plus RanSac
-        std::vector<int> TemperalMatch_subset;
-        cv::Mat iniTcw = GetInitModelCam(TemperalMatch,TemperalMatch_subset);
+        // // Get initial estimate using PnP plus RanSac
+        // std::vector<int> TemperalMatch_subset;
+        // cv::Mat iniTcw = GetInitModelCam(TemperalMatch,TemperalMatch_subset);
 
-        std::vector<Eigen::Vector2d> of_gt_in_cam(TemperalMatch_subset.size());
-        std::vector<double> e_bef_cam(TemperalMatch_subset.size());
-        for (int i = 0; i < TemperalMatch_subset.size(); ++i)
-        {
-            of_gt_in_cam[i] = of_gt_cam[TemperalMatch_subset[i]];
-            e_bef_cam[i] = flow_error[TemperalMatch_subset[i]];
-        }
+        // std::vector<Eigen::Vector2d> of_gt_in_cam(TemperalMatch_subset.size());
+        // std::vector<double> e_bef_cam(TemperalMatch_subset.size());
+        // for (int i = 0; i < TemperalMatch_subset.size(); ++i)
+        // {
+        //     of_gt_in_cam[i] = of_gt_cam[TemperalMatch_subset[i]];
+        //     e_bef_cam[i] = flow_error[TemperalMatch_subset[i]];
+        // }
+
+        std::vector<Eigen::Vector2d> of_gt_in_cam(TemperalMatch.size(), of_gt_cam[0]);
+        std::vector<double> e_bef_cam(TemperalMatch.size(),0);
 
 
         // cout << "the ground truth pose (inv): " << endl << InvMatrix(mCurrentFrame.mTcw_gt) << endl;
         // cout << "the ground truth pose: " << endl << mCurrentFrame.mTcw_gt << endl;
         // cout << "initial pose: " << endl << iniTcw << endl;
         // // compute the pose with new matching
-        mCurrentFrame.SetPose(iniTcw);
-        Optimizer::PoseOptimizationNew(&mCurrentFrame, &mLastFrame, TemperalMatch_subset);
-        // Optimizer::PoseOptimizationFlow2Cam(&mCurrentFrame, &mLastFrame, TemperalMatch_subset, of_gt_in_cam, e_bef_cam);
+        // mCurrentFrame.SetPose(iniTcw);
+        // Optimizer::PoseOptimizationNew(&mCurrentFrame, &mLastFrame, TemperalMatch_subset);
+        Optimizer::PoseOptimizationFlow2Cam(&mCurrentFrame, &mLastFrame, TemperalMatch, of_gt_in_cam, e_bef_cam);
         // cout << "pose after update: " << endl << mCurrentFrame.mTcw << endl;
 
         // Update motion model

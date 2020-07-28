@@ -1,4 +1,4 @@
-# Multi-Motion Tracking
+# Robust Ego and Object 6-DoF Motion Estimation and Tracking<a href="https://arxiv.org/abs/2005.11052" target="_blank"><b>[ArXiv/PDF]</b></a>
 
 This code offers a multi-motion visual odometry system for dynamic environments. If you use it in an academic work, please cite:
 

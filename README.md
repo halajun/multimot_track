@@ -10,7 +10,7 @@ This code offers a multi-motion visual odometry system for dynamic environments.
       organization={IEEE}
      }
 
-An ArXiv version of this paper is available [<b>HERE</b>](https://arxiv.org/abs/2005.11052).
+An ArXiv version of this paper is available [<b>HERE</b>](https://arxiv.org/abs/2007.13993).
 
 <td> <img src="https://github.com/halajun/halajun.github.io/blob/master/images/iros20zhang.jpg" alt="iros20zhang" width="960" height="480" border="10" /></a> </td>
 

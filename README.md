@@ -5,7 +5,8 @@ This code offers a multi-motion visual odometry system for dynamic environments.
     @article{zhang2020iros,
       title={{Robust Ego and Object 6-DoF Motion Estimation and Tracking}},
       author={Zhang, Jun and Henein, Mina and Mahony, Robert and Ila, Viorela},
-      booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). To appear},
+      booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+      page={5017-5023},
       year={2020},
       organization={IEEE}
      }
